@@ -1,0 +1,42 @@
+/*----Policy----*/
+
+.Policy {
+    .heading {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .Policy-grid {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+        p,
+        li {
+            font-weight: 300;
+            line-height: 1.9;
+            color: #231f20;
+            font-family: $Milliard-l;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        i {
+            color: $color-primary;
+        }
+        h4 {
+            font-size: 35px;
+            margin-bottom: 10px;
+            color: $color-secondary;
+            font-family: $Milliard-b;
+            @include breakpoint(desktop) {
+                font-size: 26px;
+            }
+        }
+        ul {
+            padding: 0 0;
+        }
+    }
+}
+
+
+/*----Section-Policy----*/

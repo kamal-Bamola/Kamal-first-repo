@@ -1,0 +1,258 @@
+// about
+.about-txt {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -90px;
+        transform: translatey(-50%);
+        background-image: url('../images/love-conekkter-shape-right.png');
+        height: 500px;
+        width: 240px;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url('../images/love-conekkter-shape-left.png');
+        height: 510px;
+        width: 360px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+    }
+    .row {
+        max-width: 1347px;
+        margin: auto;
+    }
+    .col-lg-6 {
+        &:last-child {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .about-img {
+        figure {
+            max-width: 610px;
+            border-top-left-radius: 120px;
+            border-bottom-right-radius: 120px;
+            overflow: hidden;
+            // margin-left: auto;
+        }
+    }
+    .txt {
+        p {
+            font-family: $Milliard-l;
+        }
+    }
+}
+
+.job-dream {
+    position: relative;
+    background-image: linear-gradient(to right, #289efd, #4a45ed);
+    padding-top: 208px;
+    padding-bottom: 182px;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        background-image: url('../images/dream-job-right.png');
+        height: 135px;
+        width: 349px;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url('../images/dream-job-left.png');
+        height: 155px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: 0;
+    }
+    figure.white-dot {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        max-width: 1400px;
+        transform: translate(-50%, -50%);
+    }
+    .heading-txt {
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .inner-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0;
+                a {
+                    background-color: transparent;
+                    color: #fff;
+                }
+            }
+            a {
+                border: 1px solid #fff;
+                background-color: #fff;
+                color: #2e8cf9;
+                line-height: 3;
+            }
+        }
+    }
+}
+
+.how-work {
+    position: relative;
+    .shale-left {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 120px;
+        z-index: -1;
+    }
+    .heading-txt {
+        margin-bottom: 63px;
+    }
+    .how-work-grid {
+        text-align: center;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        background-color: #fff;
+        padding-top: 62px;
+        padding-bottom: 82px;
+        border-radius: 25px;
+        max-width: 500px;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        figure {
+            max-width: 100px;
+            margin: auto;
+        }
+        .work-grid-txt {
+            padding-top: 45px;
+            h5 {
+                font-size: 25px;
+                color: $color-secondary;
+                font-family: $Milliard-b;
+                margin-bottom: 35px;
+            }
+            p {
+                font-size: 18px;
+                color: #9b9b9b;
+                max-width: 400px;
+                margin: auto;
+                font-family: $Milliard-l;
+            }
+        }
+    }
+}
+
+.magic-team {
+    background-size: 100% 70%;
+    background-position: bottom;
+    .heading-txt {
+        margin-bottom: 63px;
+        p {
+            font-family: $Milliard-l;
+        }
+    }
+    .team-grid {
+        box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        max-width: 500px;
+        margin: auto;
+        figure {
+            height: 336px;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .team-txt {
+            padding-top: 33px;
+            padding-bottom: 45px;
+            text-align: center;
+            @include breakpoint(desktop) {
+                padding-bottom: 15px;
+            }
+            h3 {
+                font-size: 24px;
+                color: $color-secondary;
+                font-family: $Milliard-b;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            span {
+                font-size: 16px;
+                display: block;
+                text-align: center;
+                margin-bottom: 34px;
+                color: $color-secondary;
+            }
+            p {
+                font-size: 18px;
+                max-width: 300px;
+                margin: auto;
+            }
+            .team-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 25px;
+                li {
+                    &:first-child {
+                        border-bottom-left-radius: 4px;
+                        border-top-left-radius: 4px;
+                    }
+                    &:last-child a {
+                        border-right: 1px solid #dbefff;
+                        border-bottom-right-radius: 4px;
+                        border-top-right-radius: 4px;
+                    }
+                }
+                a {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #dbefff;
+                    border-right: 0;
+                    color: $color-primary;
+                    transition: all 0.4s ease-in-out;
+                    &:hover {
+                        background-color: $color-secondary;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

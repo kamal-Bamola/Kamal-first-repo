@@ -1,0 +1,71 @@
+.btn {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: $color-primary;
+    font-family: $Milliard-M;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 3;
+    border-radius: 4px;
+    padding: 0 30px;
+    text-indent: 0px;
+    min-width: 150px;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px rgba(#000, 0.10);
+    @include transition;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        box-shadow: 5px 0px 10px rgba(#000, 0.10);
+    }
+}
+
+// .btn {
+//     cursor: pointer;
+//     position: relative;
+//     overflow: hidden;
+//     transition: all .5s;
+// }
+.btn:before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #001f4533;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.btn:after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #001f4533;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.btn:hover:before {
+    transform: rotateX(90deg);
+    z-index: 0;
+}
+
+.btn:hover:after {
+    transform: rotateY(90deg);
+    z-index: 0;
+}

@@ -1,0 +1,114 @@
+.form-grid {
+    background-color: #fff;
+    padding: 40px 50px 40px 50px;
+    border-radius: 10px;
+    .add {
+        a {
+            color: $color-primary;
+            font-size: 35px;
+        }
+    }
+    .form-group .form-select,
+    .form-group input.form-control {
+        width: 100%;
+        border-radius: 0.25rem;
+        height: 70px;
+        padding-left: 30px;
+        // border-color: #a1a8b5;
+        @include breakpoint(desktop) {
+            height: 55px;
+        }
+        &::placeholder {
+            font-size: 16px;
+            line-height: 2;
+        }
+    }
+    textarea.form-control {
+        padding-left: 30px;
+        border-radius: 0.25rem;
+        // border-color: #a1a8b5;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    label.dash-label {
+        font-size: 16px;
+        color: #001f45;
+        position: relative;
+        bottom: -11px;
+        background-color: #fff;
+        z-index: 5;
+        right: -25px;
+        padding: 0 5px;
+    }
+    .file-upload {
+        margin-top: 35px;
+    }
+    .add-skils {
+        background-color: #fafafa;
+        ul {
+            flex-wrap: wrap;
+            li {
+                padding: 10px 20px;
+                border-radius: 4px;
+                color: #636a78;
+                background-color: #fff;
+                margin-right: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+                font-family: $Milliard-l;
+                &:last-child {
+                    margin-right: 0;
+                }
+                span {
+                    padding-left: 5px;
+                    font-family: $Milliard-l;
+                }
+            }
+        }
+    }
+    .btn {
+        margin-top: 37px;
+    }
+}
+
+.form-control:focus {
+    border-color: $color-primary;
+    box-shadow: 0 0 0 0 rgb(13 110 253 / 25%);
+}
+
+.dashboard-heading {
+    padding-top: 20px;
+    margin-bottom: 45px;
+    padding-left: 10px;
+}
+
+.file-upload {
+    position: relative;
+    width: fit-content;
+    // height: 50px;
+    display: flex;
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+        background: white;
+        padding: 10px 10px;
+        border-radius: 4px;
+        border: 1px solid #ced4da;
+        font-family: $Milliard-l;
+        input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 0px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            cursor: inherit;
+            display: block;
+            font-family: $Milliard-l;
+        }
+    }
+}

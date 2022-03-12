@@ -1,0 +1,143 @@
+//Header Content Here
+header.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navbar-brand {
+        max-width: 190px;
+    }
+    .navbar-collapse {
+        .navbar-nav {
+            align-items: center;
+        }
+        li {
+            margin-left: 50px;
+            @include breakpoint(desktop) {
+                margin-left: 20px;
+            }
+            &:first-child {
+                margin: 0;
+            }
+            &:last-child {
+                margin-left: 20px;
+            }
+            .nav-link {
+                color: #fff;
+                font-family: $Milliard-l;
+                @include breakpoint(ipad) {}
+                &.btn-post,
+                &.btn-signup {
+                    display: inline-block;
+                    width: auto;
+                    height: auto;
+                    border: none;
+                    color: #fff;
+                    background: transparent;
+                    font-family: $Milliard-l;
+                    letter-spacing: 0.01em;
+                    line-height: 3;
+                    border-radius: 4px;
+                    padding: 0 30px;
+                    text-indent: 0px;
+                    min-width: 150px;
+                    border: 1px solid #fff;
+                    text-transform: capitalize;
+                    text-align: center;
+                    font-size: 15px;
+                    transition: all 0.4s ease-in-out;
+                    &:hover {
+                        background-color: rgb(255 255 255 / 36%);
+                        color: #000;
+                    }
+                }
+                &.btn-signup {
+                    background-color: #fff !important;
+                    color: #000 !important;
+                    &:hover {
+                        background-color: rgb(255 255 255 / 36%) !important;
+                    }
+                }
+                &.active {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0 rgb(13 110 253 / 25%);
+}
+
+.header-bg {
+    position: relative;
+    background-color: $color-primary;
+    .header {
+        position: relative;
+    }
+}
+
+// header-sticky
+header {
+    // padding: 20px 40px;
+    // background: gray;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: position 10s;
+    -ms-transition: position 10s;
+    -o-transition: position 10s;
+    transition: all 0.5s ease;
+}
+
+//   section {
+//     height: 150vh;
+//   }
+.fixed {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    animation: smoothScroll 2s forwards;
+    background-color: $color-primary;
+    transition: transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+// header-sticky-end
+@include breakpoint(ipad) {
+    .navbar-collapse {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background-color: #000000b8;
+        ul {
+            padding: 20px;
+            li {
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 991px) and (orientation: landscape) {
+    // .popup-sec .login-grid {
+    //     max-height: 480px;
+    //     overflow-y: auto;
+    // }
+}

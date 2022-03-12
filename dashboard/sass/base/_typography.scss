@@ -1,0 +1,168 @@
+html {
+    font-size: rem(16px);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $Milliard-M;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: rem(16px);
+    color: $color-text;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $Milliard-M;
+    color: $color-heading;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    display: block;
+    margin: 0;
+}
+
+h1 {
+    font-size: rem(50px);
+    font-weight: 600;
+    @include breakpoint(x-large) {
+        font-size: rem(45px);
+    }
+    @include breakpoint(normal) {
+        font-size: rem(40px);
+    }
+    @include breakpoint(ipad) {
+        font-size: rem(35px);
+    }
+    @include breakpoint(mobile) {
+        font-size: rem(30px);
+    }
+}
+
+h2 {
+    font-size: rem(32px);
+    @include breakpoint(x-large) {}
+    @include breakpoint(desktop) {
+        font-size: rem(26px);
+    }
+    @include breakpoint(ipad) {
+        font-size: rem(26px);
+    }
+    @include breakpoint(mobile) {
+        font-size: rem(22px);
+    }
+}
+
+h3 {
+    font-size: rem(28px);
+}
+
+h4 {
+    font-size: rem(26px);
+    font-weight: 700;
+    @include breakpoint(x-large) {
+        font-size: rem(24px);
+    }
+    @include breakpoint(normal) {
+        font-size: rem(20px);
+    }
+    @include breakpoint(mobile) {
+        font-size: rem(18px);
+    }
+    a {
+        color: $color-heading;
+        &:hover {
+            color: $color-heading;
+            text-decoration: underline;
+        }
+    }
+}
+
+h5 {
+    font-size: rem(24px);
+}
+
+h6 {
+    font-size: rem(20px);
+    font-weight: 500;
+    @include breakpoint(x-large) {
+        font-size: rem(18px);
+    }
+    @include breakpoint(desktop) {
+        font-size: rem(16px);
+    }
+}
+
+p {
+    font-size: rem(18px);
+    font-weight: 400;
+    font-family: $sans-serif;
+    line-height: 1.65;
+    margin-bottom: 0;
+    color: $color-text;
+    @include breakpoint(x-large) {
+        font-size: rem(16px);
+    }
+    @include breakpoint(ipad) {
+        font-size: rem(14px);
+    }
+    strong {
+        font-family: $sans-serif;
+        font-weight: 700;
+    }
+    a {
+        color: $color-primary;
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@font-face {
+    font-family: 'Milliard light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/font-site/Rene Bieder  Milliard Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Milliard Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/font-site/Rene Bieder  Milliard Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Milliard Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/font-site/Rene-Bieder-Milliard-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Milliard ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Milliard ExtraBold'), url('Rene Bieder  Milliard ExtraBold.woff') format('woff');
+}

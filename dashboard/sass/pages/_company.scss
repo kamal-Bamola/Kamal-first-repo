@@ -1,0 +1,32 @@
+.dashboard-main {
+    .form-grid-tabs {
+        .company-interview-schedule {
+            .table100-nextcols {
+                tr {
+                    vertical-align: middle;
+                }
+                .column5 {
+                    min-width: 230px;
+                }
+                .column4 {
+                    min-width: 280px;
+                    .name-img {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        figure {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .column7 {
+                    min-width: 220px;
+                }
+            }
+        }
+    }
+}
